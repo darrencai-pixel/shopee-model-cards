@@ -20,7 +20,7 @@ const els = {
 async function init() {
   const config = await fetch('./data/site-config.json').then(r => r.json());
   const products = await fetch('./data/products.json').then(r => r.json());
-  els.siteTitle.textContent = config.siteTitle || '摩配热销原品清单';
+  els.siteTitle.textContent = config.siteTitle || '餐厨家具热销原品清单';
   state.allProducts = products;
   fillCategory1Options();
   bindEvents();

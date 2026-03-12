@@ -72,11 +72,15 @@ body{
   margin:2px 0;
 }
 .toolbar-panel{
+  position: sticky;
+  top: 8px;
+  z-index: 1000;
   margin:14px 0 22px;
   background:#f3f3f4;
+  border:1px solid #e3e5e8;
   border-radius:14px;
   padding:18px 18px 12px;
-  box-shadow:var(--shadow);
+  box-shadow:0 8px 20px rgba(20,20,20,.08);
 }
 .toolbar-grid{
   display:grid;
